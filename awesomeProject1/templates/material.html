@@ -1,0 +1,20 @@
+<!-- templates/resource.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Material}}</title>
+</head>
+<body style="font-family: Georgia, serif; background-color: #f5f5f5; text-align: left; padding: 10px;">
+<div style="background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; margin: 20px; display: inline-block; text-align: left;">
+    <img src="{{.ImageURL}}" alt="{{.Material}}" style="max-width: 100%; height: auto; width: 450px; height: 300px;">
+    <h1 style="font-size: 40px; color: #333;">{{.Material}}</h1>
+    <p style="font-size: 22px; color: #666;">Добыто: {{.Text}}</p>
+    <p style="font-size: 22px; color: #666;">Период: {{.Period}}</p>
+    <p style="font-size: 22px; color: #666;">Место добычи: {{.Place}}</p>
+    <a href="/home" style="text-decoration: none; margin: 50px 20px;">
+        <span style="font-family: Georgia, serif;background-color: #5c3991; color: #fff; font-size: 28px; padding: 20px 30px; border-radius: 5px; font-weight: bold; margin: 50px 30px;">На главную страницу</span>
+    </a>
+</div>
+</body>
+</html>

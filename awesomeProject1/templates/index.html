@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.title}}</title>
+</head>
+<body>
+<div style="text-align: center">
+    <div style="display: inline-grid; background-color: #eeeeee; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 30px; margin: 10px;">
+        <label style="font-size: 28px; margin: 10px; text-align: left;">Поиск по материалам:</label>
+        <form action="" method="get">
+            <input type="text" name="search" placeholder="Введите материал..." style="font-size: 28px; margin: 10px 10px; padding: 20px"/>
+        </form>
+            <h1 style="font-family: Georgia, serif; font-size: 40px; color: #333; margin-bottom: 30px;">Доступные ресурсы:</h1>
+
+        {{ if eq .res1 "Титан" }}
+        <a href="/home/titanium" style="text-decoration: none; margin: 30px 10px;">
+            <span style="font-family: Georgia, serif;background-color: #164778; color: #fff; font-size: 28px; padding: 20px 30px; border-radius: 5px; font-weight: bold; margin: 0 10px;">{{.res1}}</span>
+        </a>
+        {{ end }}
+
+        {{ if eq .res2 "Алюминий" }}
+        <a href="/home/aluminium" style="text-decoration: none; margin: 30px 10px;">
+            <span style="font-family: Georgia, serif;background-color: #164778; color: #fff; font-size: 28px; padding: 20px 30px; border-radius: 5px; font-weight: bold; margin: 0 10px;">{{.res2}}</span>
+        </a>
+        {{ end }}
+
+        {{ if eq .res3 "Железо" }}
+        <a href="/home/ferrum" style="text-decoration: none; margin: 30px 10px;">
+            <span style="font-family: Georgia, serif;background-color: #164778; color: #fff; font-size: 28px; padding: 20px 30px; border-radius: 5px; font-weight: bold; margin: 0 10px;">{{.res3}}</span>
+        </a>
+        {{ end }}
+
+        {{ if eq .btn 1 }}
+        <a href="/home" style="text-decoration: none; margin: 50px 20px;">
+            <span style="font-family: Georgia, serif;background-color: #5c3991; color: #fff; font-size: 28px; padding: 20px 30px; border-radius: 5px; font-weight: bold; margin: 50px 30px;">На главную страницу</span>
+        </a>
+        {{ end }}
+    </div>
+</div>
+</body>
+</html>

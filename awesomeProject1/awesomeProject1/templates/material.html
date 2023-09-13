@@ -1,0 +1,16 @@
+<!-- templates/resource.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Material}}</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; text-align: center; padding: 20px;">
+<div style="background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 20px; margin: 20px; display: inline-block; text-align: left;">
+    <img src="{{.ImageURL}}" alt="{{.Material}}" style="max-width: 100%; height: auto; width: 200px; height: 150px;">
+    <h1 style="font-size: 24px; color: #333;">{{.Material}}</h1>
+    <p style="font-size: 16px; color: #666;">{{.Text}}</p>
+    <p style="font-size: 16px; color: #666;">Описание: {{.Description}}</p>
+</div>
+</body>
+</html>
