@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.title}}</title>
+    <link rel="stylesheet" type="text/css" href="../css/hp-style.css">
+</head>
+<body>
+<div class="container">
+    <div class="search-box">
+        <label class="search-label">Поиск по материалам:</label>
+
+        <form action="" method="get">
+            <input type="text" name="search" placeholder="Введите материал..." class="search-input"/>
+        </form> <h1 class="resources-heading">Доступные ресурсы:</h1>
+
+    {{ if eq .res1 "Титан" }}
+    <a href="/home/titanium" class="resource-link">
+        <span class="resource-name">{{.res1}}</span>
+    </a>
+    {{ end }}
+
+    {{ if eq .res2 "Алюминий" }}
+    <a href="/home/aluminium" class="resource-link">
+        <span class="resource-name">{{.res2}}</span>
+    </a>
+    {{ end }}
+
+    {{ if eq .res3 "Железо" }}
+    <a href="/home/ferrum" class="resource-link">
+        <span class="resource-name">{{.res3}}</span>
+    </a>
+    {{ end }}
+
+    {{ if eq .btn 1 }}
+    <a href="/home" class="home-link">
+        <span class="home-button">На главную страницу</span>
+    </a>
+    {{ end }}
+
+    </div>
+</div>
+</body>
+</html>
