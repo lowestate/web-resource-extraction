@@ -1,0 +1,8 @@
+.main-page-card {
+    display: inline-grid;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 10px;
+}

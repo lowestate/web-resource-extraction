@@ -26,7 +26,7 @@ func StartServer() {
 	})
 
 	r.GET("/home/titanium", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "material.html", gin.H{
+		c.HTML(http.StatusOK, "rp_resource.html", gin.H{
 			"Material": "Титан",
 			"Text":     "Добыто 2 кг титана",
 			"ImageURL": "/image/titanium.png", // URL-адрес изображения для Титана
@@ -34,7 +34,7 @@ func StartServer() {
 	})
 
 	r.GET("/home/aluminium", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "material.html", gin.H{
+		c.HTML(http.StatusOK, "rp_resource.html", gin.H{
 			"Material": "Алюминий",
 			"Text":     "Добыто 11 кг алюминия",
 			"ImageURL": "/image/aluminium.jpg", // URL-адрес изображения для Алюминия
@@ -42,7 +42,7 @@ func StartServer() {
 	})
 
 	r.GET("/home/ferrum", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "material.html", gin.H{
+		c.HTML(http.StatusOK, "rp_resource.html", gin.H{
 			"Material": "Железо",
 			"Text":     "Добыто 6 кг железа",
 			"ImageURL": "/image/ferrum.jpg", // URL-адрес изображения для Железа
@@ -52,7 +52,7 @@ func StartServer() {
 	r.LoadHTMLGlob("templates/*")
 
 	r.GET("/home", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.html", gin.H{
+		c.HTML(http.StatusOK, "hp_resources.html", gin.H{
 			"title": "Ресурсы:",
 			"res1":  "Титан",
 			"res2":  "Алюминий",
